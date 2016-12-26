@@ -1,0 +1,9 @@
+Stocks Class Design
+
+Stock  //--- each array belongs to the class before it 
+   DateGathered[] //means date the data was scrubbed  
+                  //--- so class stocks with options will have a dategathered array
+   		ExpiredDates[] -- DateGathered classes will have expired dates arraay
+   			Strikes[]  //--ExpiredDates classes will have strike prices array
+   				OptionInfo //-- Each Strikes class will have a put and a call optioninfo.
+   				
