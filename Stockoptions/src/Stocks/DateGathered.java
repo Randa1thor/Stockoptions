@@ -1,9 +1,11 @@
 package Stocks;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class DateGathered {
 	long date;
+	BigDecimal stock_price;
 	ArrayList<OptionExpireDate> expirations;
 	
 	
