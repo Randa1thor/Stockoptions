@@ -47,6 +47,6 @@ public class Stock {
 	public void setSymbol(String symbol) {
 		this.symbol = symbol;
 	}
-
+	//I was able to edit this file.....LOL 
 	
 }
