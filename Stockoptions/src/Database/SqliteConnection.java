@@ -27,7 +27,7 @@ public class SqliteConnection {
 		try{
 			// create a database connection
 			this.connection = DriverManager
-					.getConnection("jdbc:sqlite::resource:stocks.db");
+					.getConnection("jdbc:sqlite:resource:stocks.db");
 		}catch(SQLException e){
 			// if the error message is "out of memory",
 						// it probably means no database file is found
