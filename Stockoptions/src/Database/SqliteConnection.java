@@ -11,7 +11,7 @@ public class SqliteConnection {
 	private Connection connection;
 	
 	
-	//change
+	//change same line of code
 	
 	
 	public Statement getStatement() throws SQLException {
