@@ -1,3 +1,0 @@
-C:\Users\d1\Desktop\GitHub\Stockoptions\Test5\Test5\bin\Debug\Test5.jar
-C:\Users\d1\Desktop\GitHub\Stockoptions\Test5\Test5\obj\Debug\pkg\Program.class
-C:\Users\d1\Desktop\GitHub\Stockoptions\Test5\Test5\obj\Debug\Test5.jar
