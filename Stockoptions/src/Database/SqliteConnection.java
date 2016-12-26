@@ -11,6 +11,8 @@ public class SqliteConnection {
 	private Connection connection;
 	
 	
+	//change
+	
 	
 	public Statement getStatement() throws SQLException {
 		if (connection==null)
