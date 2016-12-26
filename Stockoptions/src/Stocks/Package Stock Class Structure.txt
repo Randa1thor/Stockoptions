@@ -1,6 +1,6 @@
 Stocks Class Design
 
-Stock  //--- each array belongs to the class before it 
+StockWithOptions extends Stock  //--- each array belongs to the class before it 
    DateGathered[] //means date the data was scrubbed  
                   //--- so class stocks with options will have a dategathered array
    		ExpiredDates[] -- DateGathered classes will have expired dates arraay
