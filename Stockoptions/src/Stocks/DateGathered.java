@@ -3,7 +3,7 @@ package Stocks;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-public class DateGathered {
+public class DateGathered implements Comparable<DateGathered>{
 	long date;
 	BigDecimal stock_price;
 	ArrayList<OptionExpireDate> expirations;
@@ -50,6 +50,13 @@ public class DateGathered {
 	public void setExpirations(ArrayList<OptionExpireDate> expirations) {
 		this.expirations = expirations;
 	}
+
+	@Override
+	public int compareTo(DateGathered other) {
+		
+		return Long.compare(this.getDate(), other.getDate());
+	}
+	
 	
 	
 	

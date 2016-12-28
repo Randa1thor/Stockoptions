@@ -1,6 +1,8 @@
 package DataHandler;
 
 import java.util.Arrays;
+import java.util.Date;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -67,13 +69,9 @@ public class RegexParser {
 		throw new UnsupportedOperationException("Not yet supported.");
 	}
 	
-	
-	
-	
-
-	public static void main(String[] args){
-		URLReader browser=new URLReader();
-		
+	public void buildStockWithOptions(){
+		//I need to pull this out and use variables that could be changed for the url
+		URLReader browser=new URLReader();		
 		String response=browser.getContent("https://query1.finance.yahoo.com/v7/finance/options/PGH?formatted=true&lang=en-US&region=US&corsDomain=finance.yahoo.com");
 		
 		System.out.println(response);
@@ -82,6 +80,17 @@ public class RegexParser {
 		
 		System.out.println(Arrays.toString(rp.getOptionExpirations(response)));
 		System.out.println(Arrays.toString(rp.getOptionStrikes(response)));
+		
+		
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args){
+		
+		
 		
 		
 	}

@@ -2,7 +2,7 @@ package Stocks;
 
 import java.math.BigDecimal;
 
-public class Strike {
+public class Strike implements Comparable<Strike>{
 	BigDecimal price;
 	OptionInfo call;
 	OptionInfo put;
@@ -42,6 +42,17 @@ public class Strike {
 	}
 	public void setPut(OptionInfo put) {
 		this.put = put;
+	}
+
+
+	
+		
+	
+
+
+	@Override
+	public int compareTo(Strike other) {
+		return this.getPrice().compareTo(other.getPrice());
 	}
 	
 	

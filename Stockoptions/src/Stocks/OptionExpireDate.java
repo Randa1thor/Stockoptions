@@ -2,7 +2,7 @@ package Stocks;
 
 import java.util.ArrayList;
 
-public class OptionExpireDate {
+public class OptionExpireDate implements Comparable<OptionExpireDate>{
 	long expire_date;
 	ArrayList<Strike> strikes;
 	
@@ -40,5 +40,11 @@ public class OptionExpireDate {
 		this.strikes = strikes;
 	}
 	
+	
+	
+	@Override
+	public int compareTo(OptionExpireDate other) {
+		return Long.compare(this.getExpire_date(), other.getExpire_date());
+	}
 	
 }
