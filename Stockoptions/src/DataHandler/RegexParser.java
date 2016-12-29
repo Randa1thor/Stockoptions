@@ -73,10 +73,12 @@ public class RegexParser {
 		//I need to pull this out and use variables that could be changed for the url
 		URLReader browser=new URLReader();		
 		String response=browser.getContent("https://query1.finance.yahoo.com/v7/finance/options/PGH?formatted=true&lang=en-US&region=US&corsDomain=finance.yahoo.com");
+		//https://query1.finance.yahoo.com/v7/finance/options/PGH?formatted=true&crumb=y7uy0JJLpMC&lang=en-US&region=US&date=1487289600&corsDomain=finance.yahoo.com
 		
 		System.out.println(response);
 		
 		RegexParser rp=new RegexParser();
+		
 		
 		System.out.println(Arrays.toString(rp.getOptionExpirations(response)));
 		System.out.println(Arrays.toString(rp.getOptionStrikes(response)));
